@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Time Table</title>
+	<style>
+		table{
+			border: 5px solid grey ;
+			border-collapse: collapse;
+		}
+		th,td{
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+		td{
+			padding: 10 px;
+		}
+		
+		.csc{
+			background-color: violet;
+		}
+		.mat{
+			background-color:lawngreen;
+		}
+		.of{
+			background-color: rgb(252, 181, 90);
+		}
+		.meet{
+			background-color: rgb(180, 180, 180);
+		}
+	</style>
+</head>
+
+<body>
+	<table align="center">
+		<caption style="color: blueviolet; font-weight: bold;">Jan's Spring Term 2006 Afternoon Schedule</caption>
+		<tr>
+			<th style="width:20%" text-align="right"></th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+		<tr>
+			<td>1:00</td>
+			<td rowspan="2" class="of">Office</td>
+			<td></td>
+			<td rowspan="2" class="of">Office</td>
+			<td rowspan="8" class="of">Office hours by Appt</td>
+			<td rowspan="2" class="of">Office</td>
+		</tr>
+		<tr>
+			<td>1:30</td>
+			<td rowspan="2" class="meet">Dept Meeting</td>
+		</tr>
+		<tr>
+			<td>2:00</td>
+			<td rowspan="3" class="mat">MAT 108</td>
+			<td rowspan="3" class="mat">MAT 108</td>
+			<td rowspan="3" class="mat">MAT 108</td>
+		</tr>
+		<tr>
+			<td>2:30</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3:00</td>
+			<td rowspan="3" class="meet">EC Meeting</td>
+		</tr>
+		<tr>
+			<td>3:30</td>
+			<td rowspan="3" class="csc">CSC 205</td>
+			<td rowspan="3" class="csc">CSC 205</td>
+			<td rowspan="3" class="csc">CSC 205</td>
+		</tr>
+		<tr>
+			<td>4:00</td>
+		</tr>
+		<tr>
+			<td>4:30</td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+
+</html>

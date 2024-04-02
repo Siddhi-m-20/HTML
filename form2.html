@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .form_group {
+      width: 50%;
+      padding: 0 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    input[type="tel"] {
+      width: 18%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: orange;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    label {
+      display: inline-block;
+      width: 80px;
+    }
+    label:after {
+      color: red;
+      content: " *";
+    }
+    .telephone {
+      display: flex;
+    }
+    .telephone input {
+      flex: 1;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2><i>Provide your information</i></h2>
+    <hr />
+    <form>
+      <div class="form_group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required/>
+      </div>
+      <div class="form_group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required/>
+      </div>
+      <div class="form_group">
+        <label for="tel">Telephone</label>
+        <div class="telephone">
+          <input type="tel" id="tel1" name="tel1" maxlength="3" />
+          <span>-</span>
+          <input type="tel" id="tel2" name="tel2" maxlength="3" />
+          <span>-</span>
+          <input type="tel" id="tel3" name="tel3" maxlength="4" />
+        </div>
+      </div>
+      <div class="form_group">
+        <label for="topic">Regarding</label>
+        <select id="topic" name="topic">
+          <option value="inquiry">General</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+        </select>
+      </div>
+      <div class="form_group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" style="height: 200px" required></textarea>
+      </div>
+      <div class="form_group">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>

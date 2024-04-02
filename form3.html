@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <title>form using HTML 5</title>
+    <meta charset="UTF-8">
+    <style>
+        /* CSS for form layout */
+        label {
+            margin-right: 10px; /* Adjust as needed */
+        }
+        .form-group {
+            margin-bottom: 15px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    </div>
+    <div class="form-group">
+        <label>Sex:</label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+    </div>
+    <div class="form-group">
+        <label for="city">City:</label>
+        <select id="city">
+            <option>Select an option</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="checkbox" id="subscribe">
+        <label for="subscribe">Subscribe?</label>
+    </div>
+    <input type="submit">
+</form>
+</body>
+</html>
